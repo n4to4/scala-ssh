@@ -17,6 +17,7 @@ startYear := Some(2011)
 licenses := Seq("Apache 2" -> new URL("http://www.apache.org/licenses/LICENSE-2.0.txt"))
 
 scalaVersion := "2.11.8"
+crossScalaVersions := Seq("2.11.8", "2.12.1")
 
 scalacOptions ++= Seq("-feature", "-language:implicitConversions", "-unchecked", "-deprecation", "-encoding", "utf8")
 
@@ -28,7 +29,7 @@ libraryDependencies ++= Seq(
   "com.jcraft" % "jsch.agentproxy.sshj" % "0.0.9",
   "com.jcraft" % "jsch.agentproxy.connector-factory" % "0.0.9",
   "ch.qos.logback" % "logback-classic" % "1.1.7" % "test",
-  "org.specs2" %% "specs2" % "2.5" % "test")
+  "org.specs2" %% "specs2-core" % "3.8.7" % "test")
 
 resolvers += "Scalaz Bintray Repo" at "http://dl.bintray.com/scalaz/releases"
 
